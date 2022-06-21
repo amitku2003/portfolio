@@ -1,0 +1,174 @@
+<html>
+    <head>
+        <title>Amit Kumar - Personal Portfolio</title>
+        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    </head>
+    <body class="dark-mode">
+        <div id="dm-btn" onclick="dark()">
+            <div class="" id="sun"><i class="fa fa-sun"></i></div>
+            <div class="hidden" id="moon"><i class="fa fa-moon"></i></div>
+        </div>
+        <div class="navbar">
+            <div class="nav-logo">Profile</div>
+            <div class="nav active-nav" id="nav-home" onclick="home()"><i class="fa fa-home"></i> Home</div>
+            <div class="nav" id="nav-about" onclick="about()"><i class="fa fa-user"></i> About</div>
+            <div class="nav" id="nav-skills" onclick="skills()"><i class="fas fa-graduation-cap"></i> Skills</div>
+            <div class="nav" id="nav-project" onclick="projects()"><i class="fa fa-list"></i> Projects</div>
+            <div class="nav" id="nav-contact" onclick="contact()"><i class="fa fa-comments"></i> Contact</div>
+        </div>
+        <div class="main-container">
+            <div class="home" id="home-page">
+                <div class="home-section-1">
+                    <div class="s1">Hello, My name is <span class="name">Amit Kumar</span></div>
+                    <div class="s2">
+                        <span id="i-am">I am a </span><span id="type"></span>
+                    </div>
+                    <div class="s3">
+                        Currently, I am pursuing <span>B.Tech. (Computer Science and Engineering)</span> <br>at <span>Lovely Professional University.</span> I am really interested in <br>working for you.
+                    </div>
+                </div>
+                <button class="hire-me" onclick="contact()">Hire Me!</button>
+                <button class="download-cv">Download CV</button>
+            </div>
+            <div class="about hidden" id="about-page">
+                <div class="head">About Me</div>
+                <div class="details">
+                    <div class="personal">
+                        <div class="details-head">Personal Details</div>
+                        <div class="dtl"><span>Birthday : </span>24<sup>th</sup> October, 2003</div>
+                        <div class="dtl"><span>Age : </span>18</div>
+                        <div class="dtl"><span>City : </span>Bihar Sharif</div>
+                        <div class="dtl"><span>E-Mail : </span>ak230amit@gmail.com</div>
+                        <div class="dtl"><span>Mobile No. : </span>+91 6201741453</div>
+                    </div>
+                    <div class="education">
+                        <div class="details-head">Education</div>
+                        <div class="ed">
+                            <div class="course">B.Tech. (CSE)</div>
+                            <div class="place">Lovely Professional University, Phagwara</div>
+                            <div class="duration">2021-25</div>
+                        </div>
+                        <div class="ed">
+                            <div class="course">Intermediate</div>
+                            <div class="place">R.P.S. School</div>
+                            <div class="duration">2019-21</div>
+                        </div>
+                        <div class="ed">
+                            <div class="course">Matriculation</div>
+                            <div class="place">St. Joseph Academy</div>
+                            <div class="duration">2018-19</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="btn-about">
+                    <button class="hire-me" onclick="contact()">Hire Me!</button>
+                    <button class="download-cv">Download CV</button>
+                </div>
+            </div>
+            <div class="skills hidden" id="skills-page">
+                <div class="head">Skills</div>
+                <div class="skills-container">
+                    <div class="skill">
+                        <div class="skill-head">C/C++</div>
+                        <div id="c-rate" class="rate">
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <div class="skill-head">Python</div>
+                        <div id="p-rate" class="rate">
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <div class="skill-head">HTML</div>
+                        <div id="h-rate" class="rate">
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <div class="skill-head">CSS</div>
+                        <div id="c-rate" class="rate">
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <div class="skill-head">Javascript</div>
+                        <div id="j-rate" class="rate">
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <div class="skill-head">React JS</div>
+                        <div id="r-rate" class="rate">
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="projects hidden" id="projects-page">
+                <div class="head">Projects</div>
+                <h1>Currently, no projects to show.</h1>
+            </div>
+            <div class="contact hidden" id="contact-page">
+                <div class="head">Contact</div>
+                <div class="contact-container">
+                    <div class="co-s1">
+                        <h1>Contact Me</h1>
+                        <p>Please contact me. I would love to interact with you.</p>
+                        <div class="ct-dtl github"><i class="fa-brands fa-github"></i> amitku2003</div>
+                        <div class="ct-dtl linkedin"><i class="fa-brands fa-linkedin"></i> amit-kumar-2003</div>
+                        <div class="ct-dtl mail"><i class="fa-solid fa-envelope"></i> ak230amit@gmail.com</div>
+                        <div class="ct-dtl instagram"><i class="fa-solid fa-hashtag"></i> amit-kumar</div>
+                        <div class="ct-dtl mobile"><i class="fa fa-phone"></i> +91 6201741453</div>
+                    </div>
+                    <div class="co-s2">
+                        <!-- <h1>Message me here</h1> -->
+                        <form action="https://formspree.io/f/xjvlzrjr"
+                        method="POST">
+                            <input type="text" name="Name" placeholder="Enter your name..." required><br>
+                            <input type="email" name="E-mail" placeholder="Enter your email address here..." required>
+                            <textarea name="Message" id="message" cols="40" rows="4" nowrap="off" placeholder="Type your message here..." style="resize: none;" required></textarea><br>
+                            <input type="submit" value="Send Message">
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+        <script>
+            var typed = new Typed("#type",{
+                strings: ["Student", "Web Developer", "Technophile"],
+                typeSpeed: 100,
+                backSpeed: 100,
+                loop: true
+            });
+        </script>
+        <script src="script.js"></script>
+    </body>
+</html>
