@@ -58,6 +58,23 @@ const contact = () => {
     document.getElementById('nav-project').classList="nav";
     document.getElementById('nav-contact').classList="nav active-nav";
 }
+const hire = () => {
+    if (/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent)) {
+        const scrollingElement = (document.scrollingElement || document.body);
+        scrollingElement.scrollTop = scrollingElement.scrollHeight;
+    } else {
+        document.getElementById('home-page').classList = "home hidden";
+        document.getElementById('about-page').classList = "about hidden";
+        document.getElementById('skills-page').classList = "skills hidden";
+        document.getElementById('projects-page').classList = "projects hidden";
+        document.getElementById('contact-page').classList = "contact";
+        document.getElementById('nav-home').classList = "nav";
+        document.getElementById('nav-about').classList = "nav";
+        document.getElementById('nav-skills').classList = "nav";
+        document.getElementById('nav-project').classList = "nav";
+        document.getElementById('nav-contact').classList = "nav active-nav";
+    }
+}
 
 const dark = () => {
     document.body.classList.toggle("dark-mode");
