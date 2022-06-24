@@ -410,20 +410,32 @@ form input[type=submit]{
     display: none;
 }
 
-@media(max-width: 600px) {
+/* @media(max-width: 600px) {
     #dm-btn{
         font-size: 3rem;
     }
     body{
         background-color: white;
     };
-}
+} */
 
-@media screen and (min-width:601px) and (max-width: 999px){
+@media screen and (max-width: 999px){
     body{
         display: block;
         width: 100%;
+        padding: 3.5rem;
         background-color: var(--bg-black-100);
+    }
+    #dm-btn {
+        font-size: 5rem;
+        right: -7rem;
+        top: 6rem;
+    }
+    br{
+        display: none;
+    }
+    .s-br{
+        display: block;
     }
     .navbar{
         display: none;
@@ -438,5 +450,122 @@ form input[type=submit]{
     .btn-about{
         display: none;
     }
+    /* Home Page */
+    .home-section-1{
+        margin-top: 12rem;
+    }
+    .home-section-1 .s1{
+        font-size: 6.8rem;
+    }
+    .home-section-1 .s1 .name{
+        font-size: 8rem;
+    }
+    .home-section-1 .s3{
+        font-size: 1.5rem;
+    }
+    .home-btn{
+        margin-top: 12rem;
+        display: flex;
+        justify-content: center;
+    }
+    .home-btn button{
+        font-size: 3.5rem;
+    }
+    .home-btn .hire-me{
+        margin-right: 2rem;
+    }
+    /* About Page */
+    .head{
+        margin-top: 0;
+        font-size: 5rem;
+    }
+    .head::before {
+        height: 0.8rem;
+        width: 8rem;
+        top: 7.2rem;
+    }
+    .head::after {
+        top: 8.5rem;
+        height: 0.8rem;
+        width: 5rem;
+    }
+    .details{
+        flex-direction: column;
+    }
+    .education, .personal{
+        width: 85%;
+        padding: 5rem;
+        /* margin: auto; */
+        margin-top: 4rem;
+    }
+    .education{
+        margin-top: 2rem;
+        /* margin-left: 4.5rem; */
+    }
+    .details-head{
+        font-size: 4.5rem;
+    }
+    .dtl, .course{
+        font-size: 2.8rem;
+    }
+    .place{
+        font-size: 1.8rem;
+    }
+    .duration{
+        font-size: 1.3rem;
+    }
+    /* Skills Page */
+    .skills-container{
+        grid-template-columns: auto auto;
+    }
+    .skill{
+        width: auto;
+        margin: 1rem 2rem;
+    }
+    .skill-head{
+        font-size: 4rem;
+    }
+    .skill .fa{
+        font-size: 4rem;
+    }
+    /* Contact Page */
+    .contact-container{
+        height: auto;
+        flex-direction: column;
+    }
+    .co-s1 h1{
+        display: none;
+    }
+    .co-s1, .co-s2{
+        width: auto;
+    }
+    .co-s1 p{
+        font-size: 3rem;
+    }
+    .co-s1 .ct-dtl{
+        font-size: 2.5rem;
+    }
+    .co-s2 form{
+        padding-left: 2rem;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    input[type=text], input[type=email]{
+        width: 60%;
+        height: auto;
+        margin: auto;
+        padding: 1rem;
+        font-size: 3rem;
+        margin: 1rem 0;
+    }
+    textarea{
+        width: 60%;
+        height: auto;
+        margin: auto;
+        padding: 1rem;
+        font-size: 3rem;
+        margin: 1rem 0;
+    }
 }
-
