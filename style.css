@@ -419,7 +419,7 @@ form input[type=submit]{
     };
 }
 
-@media(min-width:601px) and (max-width: 999px){
+@media screen and (min-width:601px) and (max-width: 999px){
     body{
         display: block;
         width: 100%;
