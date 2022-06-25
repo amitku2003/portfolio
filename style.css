@@ -370,7 +370,7 @@ button{
 .pro-1{
     background: url(img/hotstar.png);
     transition: ease-in-out;
-    transition-duration: 5s;
+    transition-duration: 2s;
 }
 .pro-2{
     background: url(img/netflix.png);
